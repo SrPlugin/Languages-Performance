@@ -125,5 +125,3 @@ Rscript performance.R
 ```bash
 ruby performance.rb
 ```
----
-
