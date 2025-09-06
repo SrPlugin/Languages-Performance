@@ -27,9 +27,10 @@ El objetivo es comparar la **performance de distintos lenguajes y runtimes** en 
 | Lenguaje / Runtime | Tiempo de ejecución (s) |
 |-------------------|------------------------|
 | Node.js + JS      | 0.60                   |
-| Bun + TS     | 0.40                   |
+| Bun + TS          | 0.40                   |
 | Python            | 48.57                  |
 | Java              | 0.10                   |
+| C                 | 1.3             |
 | C++               | No probado             |
 | C#                | No probado             |
 | Dart              | No probado             |
@@ -71,6 +72,11 @@ python performance.py
 ```bash
 javac performance.java
 java performance
+```
+
+### C
+```bash
+tcc -run archivo.c
 ```
 
 ### C++
