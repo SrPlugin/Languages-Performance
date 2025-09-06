@@ -65,7 +65,7 @@ El objetivo es comparar la **performance de distintos lenguajes y runtimes** en 
    - Swift (14.52 s) es relativamente lento en este benchmark, lo cual puede ser por cómo su runtime maneja scripts vs binarios compilados.  
 
 5. **Comparativa interesante**  
-   - Kotlin y Go sorprenden como los más rápidos, incluso más que C++ en tu prueba, lo que demuestra lo bien optimizados que están sus compiladores para operaciones intensivas.  
+   - Kotlin y Go sorprenden como los más rápidos, incluso más que C++, lo que demuestra lo bien optimizados que están sus compiladores para operaciones intensivas.  
    - Lenguajes interpretados como Python, Ruby y R muestran la gran diferencia de rendimiento frente a compilados o JIT optimizados.
 ---
 
