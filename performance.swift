@@ -2,11 +2,11 @@ import Foundation
 
 let outerIterations = 10000
 let innerIterations = 100000
-var result: Int = 0
+var result = 0
 
 print("Iniciando 1,000 millones de iteraciones con bucles anidados...")
 
-let startTime = CFAbsoluteTimeGetCurrent()
+let startTime = Date() // Inicio del timer
 
 for _ in 0..<outerIterations {
     for _ in 0..<innerIterations {
@@ -14,8 +14,8 @@ for _ in 0..<outerIterations {
     }
 }
 
-let endTime = CFAbsoluteTimeGetCurrent()
-let executionTime = endTime - startTime
+let endTime = Date() // Fin del timer
+let executionTime = endTime.timeIntervalSince(startTime) // Diferencia en segundos
 
 print("\nResultado final: \(result)")
-print("Tiempo de ejecución: \(String(format: "%.2f", executionTime)) segundos")
+print("Tiempo de ejecución: \(executionTime) segundos")
