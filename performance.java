@@ -1,4 +1,4 @@
-public class BillionIterations {
+public class performance {
     public static void main(String[] args) {
         int outerIterations = 10000;
         int innerIterations = 100000;

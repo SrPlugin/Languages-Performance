@@ -39,35 +39,13 @@ El objetivo es comparar la **performance de distintos lenguajes y runtimes** en 
 | Dart              | 1.14                   |
 | Go                | 0.17                   |
 | Kotlin            | 0.02                   |
-| Rust              | 4.93                   |
+| Rust              | 0.00                   |
 | Swift             | 14.52                  |
 | R                 | 20.62                  |
 | Ruby              | 46.85                  |
 
 ---
 
-## Observaciones
-
-1. **Lenguajes compilados a código nativo son los más rápidos**  
-   - Kotlin (0.02 s), Go (0.17 s) y Java (0.10 s) se llevan los tiempos más bajos, porque la compilación a bytecode optimizado (JVM) o código nativo permite un rendimiento excelente en loops intensivos.  
-   - C y C++ también son muy rápidos (1.30 s y 0.87 s), aunque en este caso los tiempos dependen de las optimizaciones del compilador (`-O3`).  
-
-2. **Lenguajes interpretados son más lentos**  
-   - Python (48.57 s) y Ruby (46.85 s) muestran que los lenguajes interpretados puros no manejan tan bien loops grandes y cálculos intensivos.  
-   - R (20.62 s) también es lento, aunque un poco mejor que Python, probablemente por su optimización interna para operaciones vectoriales, pero no para loops puros.  
-
-3. **JavaScript y TypeScript**  
-   - Node.js (0.60 s) y Bun (0.40 s) demuestran la eficiencia de los motores modernos (V8 para Node y Bun runtime), incluso en tareas CPU-bound.  
-   - Bun es más rápido que Node.js en este benchmark, lo que coincide con sus optimizaciones recientes.  
-
-4. **Lenguajes modernos y optimizados**  
-   - Dart (1.14 s) y Rust (4.93 s) muestran buenas velocidades; Rust es más lento que C++ en este caso, probablemente por la seguridad de memoria y verificaciones en tiempo de compilación.  
-   - Swift (14.52 s) es relativamente lento en este benchmark, lo cual puede ser por cómo su runtime maneja scripts vs binarios compilados.  
-
-5. **Comparativa interesante**  
-   - Kotlin y Go sorprenden como los más rápidos, incluso más que C++ en tu prueba, lo que demuestra lo bien optimizados que están sus compiladores para operaciones intensivas.  
-   - Lenguajes interpretados como Python, Ruby y R muestran la gran diferencia de rendimiento frente a compilados o JIT optimizados.
----
 
 ## Cómo usar este benchmark
 
@@ -130,6 +108,7 @@ java -jar performance.jar
 ```bash
 rustc performance.rs -O
 ./performance
+
 ```
 
 ### Swift
@@ -146,3 +125,5 @@ Rscript performance.R
 ```bash
 ruby performance.rb
 ```
+---
+
