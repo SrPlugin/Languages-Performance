@@ -35,7 +35,7 @@ El objetivo es comparar la **performance de distintos lenguajes y runtimes** en 
 | C#                | No probado             |
 | Dart              | No probado             |
 | Go                | 0.17                   |
-| Kotlin            | No probado             |
+| Kotlin            | 0.02                   |
 | Rust              | No probado             |
 | Swift             | No probado             |
 
